@@ -78,7 +78,11 @@ public class WXEventCenter {
     public static final String EVENT_TABBAR_WATCHINDEX = "EVENT_TABBAR_WATCHINDEX";
     public static final String EVENT_TABBAR_CLEARWATCH = "EVENT_TABBAR_CLEARWATCH";
     public static final String EVENT_TABBAR_CLEARTABBARINFO = "EVENT_TABBAR_CLEARTABBARINFO";
+    public static final String EVENT_TABBAR_REFRESH = "EVENT_TABBAR_REFRESH";
 
     public static final String EVENT_DOWNLOAD_BUNDLE = "EVENT_DOWNLOAD_BUNDLE";
     public static final String EVENT_UPDATE_BUNDLE = "EVENT_UPDATE_BUNDLE";
+
+    public static final String EVENT_MODAL_OPEN = "EVENT_MODAL_OPEN";
+    public static final String EVENT_MODAL_CLOSE = "EVENT_MODAL_CLOSE";
 }

@@ -254,4 +254,9 @@ public class Constant {
     public static final class REQUEST_CODE {
         public static final int REQUEST_CODE_CONTRACT = 0xf71;
     }
+
+    /**
+     * 全局全屏透明modal url
+     */
+    public static final String GLOBAL_MODAL_URL = "GLOBAL_MODAL_URL";
 }

@@ -109,6 +109,7 @@ public class DispatchEventCenter {
             case WXEventCenter.EVENT_TABBAR_SETTABBAR:
             case WXEventCenter.EVENT_TABBAR_WATCHINDEX:
             case WXEventCenter.EVENT_TABBAR_CLEARTABBARINFO:
+            case WXEventCenter.EVENT_TABBAR_REFRESH:
             case WXEventCenter.EVENT_TABBAR_CLEARWATCH:
                 reflectionClazzPerform("com.eros.framework.event.TabbarEvent", context
                         , weexEventBean
@@ -133,6 +134,12 @@ public class DispatchEventCenter {
                         , context
                         , weexEventBean
                         , "");
+                break;
+            case WXEventCenter.EVENT_MODAL_OPEN:
+            case WXEventCenter.EVENT_MODAL_CLOSE:
+                reflectionClazzPerform("com.eros.framework.event.modal.EventModal", context
+                        , weexEventBean
+                        , "", null);
                 break;
             default:
                 reflectionClazzPerform(weexEventBean.getKey()

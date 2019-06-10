@@ -157,6 +157,7 @@ public class PlatformConfigBean implements Serializable {
         private String image;
         private String bundleUpdate;
         private String socketServer;
+        private String plusPage;
 
         public String getRequest() {
             return request;
@@ -196,6 +197,14 @@ public class PlatformConfigBean implements Serializable {
 
         public void setSocketServer(String socketServer) {
             this.socketServer = socketServer;
+        }
+
+        public String getPlusPage() {
+            return plusPage;
+        }
+
+        public void setPlusPage(String plusPage) {
+            this.plusPage = plusPage;
         }
     }
 
@@ -341,6 +350,8 @@ public class PlatformConfigBean implements Serializable {
         private boolean navShow;
         private String navTitle;
 
+        private String action;
+
         public String getPagePath() {
             return pagePath;
         }
@@ -387,6 +398,14 @@ public class PlatformConfigBean implements Serializable {
 
         public void setNavTitle(String navTitle) {
             this.navTitle = navTitle;
+        }
+
+        public String getAction() {
+            return action;
+        }
+
+        public void setAction(String action) {
+            this.action = action;
         }
     }
 
