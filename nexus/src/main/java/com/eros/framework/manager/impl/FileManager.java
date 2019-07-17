@@ -184,7 +184,11 @@ public class FileManager extends Manager{
             InputStream in = zf.getInputStream(ze);
             int size = in.available();
             buffer = new byte[size];
-            in.read(buffer);
+            int readCount = 0; // 已经成功读取的字节的个数
+            while (readCount < size) {
+                readCount += in.read(buffer, readCount, size - readCount);
+            }
+//            in.read(buffer);
             in.close();
         } catch (IOException e) {
             e.printStackTrace();
